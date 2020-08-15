@@ -82,4 +82,8 @@
 #     print("You are not tall and no male")
 #
 
-
+# # TOPIC: Using enumerate function in for loops to be able to handle both index and value at that index
+# denominations_list = [1, '2', "masha", False, 20, "50 bitches", [100, 101, 102]]
+#
+# for pos, coin in enumerate(denominations_list):
+#     print(f"Hello {coin}")
