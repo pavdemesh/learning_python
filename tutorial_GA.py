@@ -140,4 +140,20 @@
 #         exit()
 #     guess = input("Enter a guess: ")
 #     guess_count += 1
+# END of Variant 2
+
+# TOPIC: Guessing Game with while and IF
+# Variant 3
+# def guess_game(secret_word, guess_limit=5):
+#     for i in range(guess_limit):
+#         guess_try = input("Enter a guess: ")
+#         if guess_try == secret_word:
+#             return True
+#     return False
+#
+#
+# if guess_game("giraffe"):
+#     print("You win")
+# else:
+#     print("You loose")
 
