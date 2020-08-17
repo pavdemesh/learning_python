@@ -1,3 +1,6 @@
+# SOURCE: https://youtu.be/rfscVS0vtbw
+# Learn Python - Full Course for Beginners [Tutorial] - by Mike Dane (Giraffe Academy)
+
 # character_name = "Tom"
 # character_age = 50
 #
@@ -87,3 +90,54 @@
 #
 # for pos, coin in enumerate(denominations_list):
 #     print(f"Hello {coin}")
+#
+# TOPIC: Dictionaries
+# months_dict = {
+#     1: "January", 2: "February", 3: "March", 4: "April"
+# }
+# print(months_dict[2])
+# print(months_dict.get(7, "Key not found"))
+#
+# TOPIC: Getting multiple (int) inputs in one line
+# x, y, z = list(map(int, input().split()))
+# print(x + y)
+#
+# # TOPIC: Guessing Game with while and IF
+# # Variant 1
+#
+# secret_word = "giraffe"
+# guess = ""
+# guess_count = 0
+# guess_limit = 3
+# out_of_guesses = False
+#
+# while guess != secret_word and not out_of_guesses:
+#     if guess_count < guess_limit:
+#         guess = input("Enter a guess: ")
+#         guess_count += 1
+#     else:
+#         out_of_guesses = True
+#
+# if out_of_guesses:
+#     print("You Lose!")
+# else:
+#     print("You Win!")
+# # END of Variant 1
+#
+# TOPIC: Guessing Game with while and IF
+# Variant 2
+# secret_word = "giraffe"
+# guess = ""
+# guess_count = 0
+# guess_limit = 3
+#
+# while True:
+#     if guess == secret_word:
+#         print("You win!")
+#         exit()
+#     elif guess_count >= guess_limit:
+#         print("You lose!")
+#         exit()
+#     guess = input("Enter a guess: ")
+#     guess_count += 1
+
