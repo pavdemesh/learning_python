@@ -1,29 +1,33 @@
 # SOURCE: https://youtu.be/rfscVS0vtbw
+# SOURCE: https://www.mikedane.com/programming-languages/python/
+#
 # Learn Python - Full Course for Beginners [Tutorial] - by Mike Dane (Giraffe Academy)
-
+#
 # character_name = "Tom"
 # character_age = 50
 #
 # print("Character name is " + character_name + " .")
 # print("Character age is " + str(character_age) + " years.")
-
+#
 # TOPIC: Basic operations with strings
 # phrase = "Giraffe Academy"
 # # print(phrase.lower())
 # # print(phrase)
 # print(phrase.replace("Giraffe", "Elephant"))
-
+# END ------------------------------------------
+#
 # TOPIC: Math operations and importing "math"
 # from math import *
 #
 # print(sqrt(3.19999))
-
+# END --------------------------------
+#
 # TOPIC: Multiple input in one line
 # color, plural_noun, celebrity = input("Enter color, plural noun and celebrity: ").split('-')
 # print(f"Roses are {color}")
 # print(f"{plural_noun} are blue")
 # print(f"I love {celebrity}")
-#
+# END ----------------------------------------------
 #
 # TOPIC: Accessing list elements
 # my_friends = ["Kevin", 2, False, "Mike", "Susie", 145, "John"]
@@ -35,7 +39,7 @@
 # print("Because the program will stop before [-1] on index [-2]")
 # print(f"All elements starting with index [3] are: {my_friends[3:]}")
 # print(f"Or I can use [3:last_index+1], so [3:7] for a 7 array with actual last index 6: {my_friends[3:7]}")
-#
+# END -----------------------------------------------
 #
 # TOPIC: Basic operations on lists; extend, append, insert etc
 # lucky_numbers = [15, 16, 4, 8, 23, 42]
@@ -56,11 +60,12 @@
 # friends2 = friends.copy() # creates a copy of the list
 # print(lucky_numbers)
 # print(friends)
+# END ------------------------
 #
-# # TOPIC: Tuples
+# TOPIC: Tuples
 # coordinates = [(4, 6), (5, 8), (3, 21)]   # A list with tuples as list's elements
 # print(coordinates[1][0])   # Print index[0] from the tuple which is at index[1] position in the list
-#
+# END ------------------------------------------------
 #
 # # TOPIC: Function definition and usage
 # def say_hi(name, age):
@@ -69,7 +74,7 @@
 #
 # say_hi("Mike", "35")
 # say_hi("Pete", 22)
-#
+# END -----------------------------------
 #
 # # TOPIC: IF Statement
 # is_male = True
@@ -83,13 +88,15 @@
 #     print("You are tall but not a male")
 # else:
 #     print("You are not tall and no male")
+# END ------------------------------------
 #
-
 # # TOPIC: Using enumerate function in for loops to be able to handle both index and value at that index
 # denominations_list = [1, '2', "masha", False, 20, "50 bitches", [100, 101, 102]]
 #
 # for pos, coin in enumerate(denominations_list):
 #     print(f"Hello {coin}")
+#
+# END -------------------------------------
 #
 # TOPIC: Dictionaries
 # months_dict = {
@@ -101,6 +108,8 @@
 # TOPIC: Getting multiple (int) inputs in one line
 # x, y, z = list(map(int, input().split()))
 # print(x + y)
+# END of Multiple Inputs --------------------------------------------
+#
 #
 # # TOPIC: Guessing Game with while and IF
 # # Variant 1
@@ -122,7 +131,7 @@
 #     print("You Lose!")
 # else:
 #     print("You Win!")
-# # END of Variant 1
+# # END of Variant 1 --------------------------------------
 #
 # TOPIC: Guessing Game with while and IF
 # Variant 2
@@ -140,8 +149,8 @@
 #         exit()
 #     guess = input("Enter a guess: ")
 #     guess_count += 1
-# END of Variant 2
-
+# END of Variant 2 -----------------------------------------
+#
 # TOPIC: Guessing Game with while and IF
 # Variant 3
 # def guess_game(secret_word, guess_limit=5):
@@ -156,4 +165,48 @@
 #     print("You win")
 # else:
 #     print("You loose")
+# END ----------------------------------------------------------
+#
+#
+# TOPIC: Exponent function: my solution
+# Get 2 inputs: base and exponent
+# base_number = float(input("Enter base: "))
+# exp_number = int(input("Enter exponent: "))
+# # Set result equal to 1 for power of 0
+# result = 1
+# # Multiply required amount of times
+# for i in range(exp_number):
+#     result = result * base_number
+# print(result)
+# END of Exponent function
+# ---------------------------------------------------------------
+#
+# TOPIC: Build a Translator
+# every vowel -> to g
+# dog -> dgg
+# cat -> cgt
+#
+# def translate_giraffe(sentence):
+#     translated_word = ""
+#     for char in sentence:
+#         if is_vowel(char) == 1:
+#             translated_word = translated_word + "g"
+#         elif is_vowel(char) == 2:
+#             translated_word = translated_word + "G"
+#         else:
+#             translated_word = translated_word + char
+#     return translated_word
+#
+#
+# def is_vowel(char):
+#     lower_vowels = ['a', 'e', 'i', 'o', 'u']
+#     upper_vowels = ['A', 'E', 'I', 'O', 'U']
+#     if char in lower_vowels:
+#         return 1
+#     elif char in upper_vowels:
+#         return 2
+#     return 3
+#
+#
+# print(translate_giraffe("Anastacia"))
 
