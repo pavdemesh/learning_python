@@ -208,5 +208,41 @@
 #     return 3
 #
 #
-# print(translate_giraffe("Anastacia"))
+# print(translate_giraffe("Anastasia"))
 
+# TOPIC: Reading files
+# Create a variable to store opened file
+# empl_file = open("employee.txt", "r")
+#
+# Check if the file is readable
+# if not empl_file.readable():
+#     print("File not readable")
+#     exit(1)
+#
+# To read all content of the file
+# print(empl_file.read())
+#
+# Access each consecutive line with for loop
+# for line in empl_file.readlines():
+#     print(line)
+#
+# Store each line as an element of the list (empl_list)
+# empl_list = empl_file.readlines()
+# print(empl_list)
+#
+# Printing (new_list) will print empty list, since all lines were read earlier
+# And readline() remembers its position
+# new_list = empl_file.readlines()
+# print(new_list)
+#
+# Always close file at the end
+# empl_file.close()
+# END ------------------------------------------------------------
+#
+# TOPIC: Writing to files
+# empl_file = open("employee.txt", "a")
+# empl_file.write("Toby - Human Resources\n")
+#
+# new_file = open("new.txt", "w")
+# new_file.write("I just created a new file")
+# END --------------------------------------------------
