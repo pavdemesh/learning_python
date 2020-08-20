@@ -257,14 +257,14 @@
 # END ---------------------------------
 #
 # TOPIC: Classes and Objects
+# class Book:
+#     def __init__(self, title, author, num_pages):
+#         self.aaa = title
+#         self.bbb = author
+#         self.ccc = num_pages
 #
-class Book:
-    def __init__(self, title, author, num_pages):
-        self.aaa = title
-        self.bbb = author
-        self.ccc = num_pages
-
-
-book1 = Book("Harry Potter", "JK Rowling", 500)
-# book1.title = "Half-Blood Prince"
-print(book1.aaa)
+#
+# book1 = Book("Harry Potter", "JK Rowling", 500)
+# # book1.title = "Half-Blood Prince"
+# print(book1.aaa)
+# END --------------------------------
