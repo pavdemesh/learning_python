@@ -111,8 +111,8 @@
 # END of Multiple Inputs --------------------------------------------
 #
 #
-# # TOPIC: Guessing Game with while and IF
-# # Variant 1
+# TOPIC: Guessing Game with while and IF
+# Variant 1
 #
 # secret_word = "giraffe"
 # guess = ""
@@ -131,7 +131,7 @@
 #     print("You Lose!")
 # else:
 #     print("You Win!")
-# # END of Variant 1 --------------------------------------
+# END of Variant 1 --------------------------------------
 #
 # TOPIC: Guessing Game with while and IF
 # Variant 2
@@ -209,7 +209,7 @@
 #
 #
 # print(translate_giraffe("Anastasia"))
-
+#
 # TOPIC: Reading files
 # Create a variable to store opened file
 # empl_file = open("employee.txt", "r")
@@ -246,3 +246,25 @@
 # new_file = open("new.txt", "w")
 # new_file.write("I just created a new file")
 # END --------------------------------------------------
+# TOPIC: Modules
+# Can specify a handy name for module during export
+# import module_file_GA as helper
+# import random as candom # Any name I can think of even for existing libs
+#
+# print(candom.randint(1, 50))
+# print(helper.detect_extension("myveryfist.daf"))
+# print(helper.n_height * len(helper.detect_extension("retrieve.bat")))
+# END ---------------------------------
+#
+# TOPIC: Classes and Objects
+#
+class Book:
+    def __init__(self, title, author, num_pages):
+        self.aaa = title
+        self.bbb = author
+        self.ccc = num_pages
+
+
+book1 = Book("Harry Potter", "JK Rowling", 500)
+# book1.title = "Half-Blood Prince"
+print(book1.aaa)
