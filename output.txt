@@ -1,0 +1,3 @@
+Ä
+Hello 125 Masha from print function
+Hello 125 and Masha
