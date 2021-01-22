@@ -1,0 +1,18 @@
+stack = list()
+
+stack.append("p")
+stack.append("a")
+stack.append("s")
+stack.append("h")
+last_char = stack.pop()
+print(last_char)
+print(stack)
+
+queue = list()
+queue.append('banana')
+queue.append('grapes')
+queue.append('mango')
+queue.append('orange')
+first_element = queue.pop(0)
+print(first_element)
+print(queue)
